@@ -1,7 +1,7 @@
 # test_simple_calculator.py
 
 import unittest
-from simple_calculator import SimpleCalculator
+from programming_paradigm.simple_calculator import SimpleCalculator  # <- fixed import
 
 class TestSimpleCalculator(unittest.TestCase):
 
