@@ -2,7 +2,7 @@
 
 class BankAccount:
     def __init__(self, initial_balance=0):
-        self.__account_balance = initial_balance  # encapsulated attribute
+        self.__account_balance = initial_balance  # Encapsulated attribute
 
     def deposit(self, amount):
         if amount > 0:
@@ -16,4 +16,5 @@ class BankAccount:
             return False
 
     def display_balance(self):
-        print(f"Current Balance: ${self.__account_balance}")
+        # Format balance to 2 decimal places
+        print(f"Current Balance: ${self.__account_balance:.2f}")
